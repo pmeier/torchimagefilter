@@ -27,7 +27,7 @@ setup(
     long_description_content_type="text/markdown",
     packages=find_packages(exclude=("test",)),
     install_requires=install_requires,
-    extra_requires={"testing": testing_requires,},
+    extras_require={"testing": testing_requires,},
     python_requires=">=3.6",
     classifiers=classifiers,
 )
