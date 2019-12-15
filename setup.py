@@ -5,12 +5,15 @@ with open("README.md", "r") as fh:
 
 install_requires = ("numpy", "torch")
 
-testing_requires = ("pyimagetest", "pillow", "torchvision")
+testing_requires = (
+    "pyimagetest@https://github.com/pmeier/pyimagetest/archive/master.zip",
+    "pillow",
+    "torchvision",
+)
 
 classifiers = (
     "Development Status :: 3 - Alpha",
     "License :: OSI Approved :: BSD License",
-    "Operating System :: OS Independent",
     "Programming Language :: Python :: 3",
     "Topic :: Scientific/Engineering",
 )
@@ -18,7 +21,7 @@ classifiers = (
 setup(
     name="torchimagefilter",
     description="Image filtering in PyTorch",
-    version="0.1",
+    version="0.1dev",
     url="https://github.com/pmeier/torchimagefilter",
     license="BSD-3",
     author="Philip Meier",
