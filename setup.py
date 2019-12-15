@@ -9,7 +9,7 @@ testing_requires = ("pyimagetest", "pillow", "torchvision")
 
 classifiers = (
     "Development Status :: 3 - Alpha",
-    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "License :: OSI Approved :: BSD License",
     "Operating System :: OS Independent",
     "Programming Language :: Python :: 3",
     "Topic :: Scientific/Engineering",
@@ -20,7 +20,7 @@ setup(
     description="Image filtering in PyTorch",
     version="0.1",
     url="https://github.com/pmeier/torchimagefilter",
-    license="GPLv3",
+    license="BSD-3",
     author="Philip Meier",
     author_email="github.pmeier@posteo.de",
     long_description=long_description,
