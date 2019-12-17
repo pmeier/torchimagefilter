@@ -16,7 +16,7 @@ class ImageFilter(nn.Module):
         constant_padding_value: float = 0.0,
     ):
         super().__init__()
-        self.kernel = kernel
+        self.register_buffer("kernel", kernel)
         if output_shape not in ("valid", "same", "full"):
             raise ValueError(
                 "'output_shape' should be one of " "{'valid', 'same', 'full'}"
