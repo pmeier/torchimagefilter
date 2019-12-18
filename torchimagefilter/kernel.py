@@ -26,7 +26,7 @@ def gauss_kernel(std: float, radius: int, normalize: bool = True) -> torch.Tenso
     exponent = torch.arange(-radius, radius + 1, dtype=torch.float)
     exponent = -(exponent ** 2.0) / (2.0 * var)
     kernel = (factor * torch.exp(exponent)).unsqueeze(1)
-    torch.mm(kernel, kernel.t())
+    kernel = torch.mm(kernel, kernel.t())
     if normalize:
         kernel = _normalize_kernel(kernel)
     return kernel
