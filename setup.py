@@ -21,7 +21,7 @@ classifiers = (
 setup(
     name="torchimagefilter",
     description="Image filtering in PyTorch",
-    version="0.1dev",
+    version="0.1",
     url="https://github.com/pmeier/torchimagefilter",
     license="BSD-3",
     author="Philip Meier",
